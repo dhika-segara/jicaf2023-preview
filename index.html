@@ -131,6 +131,7 @@
             text-align: center;
             text-decoration: none;
             color: var(--primary-color);
+            z-index: 2;
         }
         .ticket-container::before{
             content: '';
@@ -142,9 +143,11 @@
             position: absolute;
             top: -20%;
             rotate: -5deg;
-            z-index: -1;
+            z-index: 1;
         }
         .ticket-container .ticket-name, .ticket-container .ticket-description{
+            position: relative;
+            z-index: 2;
             -webkit-transform: translateY(0);
             -moz-transform: translateY(0);
             -ms-transform: translateY(0);
@@ -197,7 +200,7 @@
         .artist-img{
             position: absolute;
             pointer-events: none;
-            z-index: 1;
+            z-index: 5;
             top: 100%;
             left: 0;
             height: 350px;
@@ -213,7 +216,7 @@
             color: var(--yellow-color);
         }
         .artist-names a:hover span{
-            z-index: 3;
+            z-index: 10;
             background-color: var(--primary-color);
             color: var(--yellow-color);
         }
