@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Homepage</title>
+    <title>JICAF 2023</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -140,6 +140,13 @@
             rotate: -5deg;
             z-index: -1;
         }
+        .ticket-container .ticket-name, .ticket-container .ticket-description{
+            transform: translateY(0);
+            transition: transform 200ms 0ms ease-in-out;
+        }
+        .ticket-container:hover .ticket-name, .ticket-container:hover .ticket-description{
+            transform: translateY(-10px);
+        }
         #regular{
             margin: 10px 0;
         }
@@ -200,6 +207,16 @@
         .official-artist-names{
             font-size: 18px;
             line-height: 18px;
+        }
+        .official-artist-names a{
+            display: inline-block;
+        }
+        .official-artist-names a span{
+            padding: 0 10px;
+        }
+        .official-artist-names a:hover span{
+            background-color: var(--primary-color);
+            color: var(--yellow-color);
         }
         #event{
 
@@ -306,6 +323,9 @@
             height: 30px;
         }
         @media (min-width: 992px) and (max-width: 1199px) {
+            .artist-img{
+                display: none;
+            }
             #ldanumaya{
                 height: 30px;
             }
@@ -330,6 +350,9 @@
             .ticket-description{
                 font-size: 20px;
                 line-height: 21px;
+            }
+            .artist-img{
+                display: none;
             }
             #ldanumaya{
                 height: 22px;
@@ -391,6 +414,9 @@
             .artist-names{
                 font-size: 26px;
                 line-height: 30px;
+            }
+            .artist-img{
+                display: none;
             }
             .official-artist-names{
                 font-size: 15px;
@@ -525,69 +551,69 @@
 
             <div class="col-12 artist-title">SPECIAL SHOWCASE</div>
             <div class="col-12 artist-names">
-                <a href="#" target="_blank">Kowawa by Abenk Alter</a>
+                <a href="#" target="_blank"><span class="artist-text">Kowawa by Abenk Alter</span></a>
                 —
-                <a href="#" target="_blank">Kunto Aji</a>
+                <a href="#" target="_blank"><span class="artist-text">Kunto Aji</span></a>
                 —
-                <a href="#" target="_blank">Machine56</a>
+                <a href="#" target="_blank"><span class="artist-text">Machine56</span></a>
                 —
-                <a href="#" target="_blank">Tabi by Marchella FP</a>
+                <a href="#" target="_blank"><span class="artist-text">Tabi by Marchella FP</span></a>
                 —
-                <a href="#" target="_blank">Mochtar Sarman</a>
+                <a href="#" target="_blank"><span class="artist-text">Mochtar Sarman</span></a>
             </div>
 
             <div class="col-12 artist-title">OFFICIAL ARTISTS</div>
             <div class="col-6 col-md-3 official-artist-names">
-                <a href="https://instagram.com/agil8" target="_blank">agil8</a><br/>
-                <a href="https://www.instagram.com/aryamularama/" target="_blank">Arya Mularama</a><br/>
-                <a href="https://www.instagram.com/aufaag/" target="_blank">aufaag</a><br/>
-                <a href="https://www.instagram.com/_06.t_" target="_blank">DAN</a><br/>
-                <a href="https://www.instagram.com/durhminic/" target="_blank">Durhminic</a><br/>
-                <a href="https://www.instagram.com/erikartoon/" target="_blank">Erikartoon</a><br/>
-                <a href="http://www.instagram.com/glendlumbao/" target="_blank">Glendford Lumbao</a><br/>
-                <a href="https://instagram.com/hushbeast" target="_blank">Hushbeast</a><br/>
-                <a href="https://www.instagram.com/samajeyan/" target="_blank">Jeanifer Youngky</a><br/>
-                <a href="https://www.instagram.com/jeremy_gdalia/" target="_blank">Jeremy Gdalia</a><br/>
-                <a href="https://www.instagram.com/jeremy_jap95/" target="_blank">Jeremy Jap</a>
+                <a href="https://instagram.com/agil8" target="_blank"><span class="artist-text">agil8</span></a><br/>
+                <a href="https://www.instagram.com/aryamularama/" target="_blank"><span class="artist-text">Arya Mularama</span></a><br/>
+                <a href="https://www.instagram.com/aufaag/" target="_blank"><span class="artist-text">aufaag</span></a><br/>
+                <a href="https://www.instagram.com/_06.t_" target="_blank"><span class="artist-text">DAN</span></a><br/>
+                <a href="https://www.instagram.com/durhminic/" target="_blank"><span class="artist-text">Durhminic</span></a><br/>
+                <a href="https://www.instagram.com/erikartoon/" target="_blank"><span class="artist-text">Erikartoon</span></a><br/>
+                <a href="http://www.instagram.com/glendlumbao/" target="_blank"><span class="artist-text">Glendford Lumbao</span></a><br/>
+                <a href="https://instagram.com/hushbeast" target="_blank"><span class="artist-text">Hushbeast</span></a><br/>
+                <a href="https://www.instagram.com/samajeyan/" target="_blank"><span class="artist-text">Jeanifer Youngky</span></a><br/>
+                <a href="https://www.instagram.com/jeremy_gdalia/" target="_blank"><span class="artist-text">Jeremy Gdalia</span></a><br/>
+                <a href="https://www.instagram.com/jeremy_jap95/" target="_blank"><span class="artist-text">Jeremy Jap</span></a>
             </div>
             <div class="col-6 col-md-3 official-artist-names">
-                <a href="https://www.instagram.com/jillgoeschill/" target="_blank">Jill Tran</a><br/>
-                <a href="https://www.instagram.com/keikusuma/" target="_blank">Kei Kusuma</a><br/>
-                <a href="https://www.instagram.com/cutssss/" target="_blank">Kevin Varian</a><br/>
-                <a href="https://www.instagram.com/kongandri/" target="_blank">Kong Andri</a><br/>
-                <a href="https://www.instagram.com/matasatu_matabolong/" target="_blank">Matasatu & Matabolong</a><br/>
-                <a href="https://www.instagram.com/mikrosil/" target="_blank">mikrosil</a><br/>
-                <a href="https://www.instagram.com/mirffu/" target="_blank">Mirfak</a><br/>
-                <a href="https://www.instagram.com/monez_/" target="_blank">Monez</a><br/>
-                <a href="https://www.instagram.com/synasaya" target="_blank">Nasaya Mafaridik</a><br/>
-                <a href="https://www.instagram.com/nikojutsu" target="_blank">Nikojutsu</a><br/>
-                <a href="http://instagram.com/nrlail" target="_blank">Nurulaila Fitriyani</a>
+                <a href="https://www.instagram.com/jillgoeschill/" target="_blank"><span class="artist-text">Jill Tran</span></a><br/>
+                <a href="https://www.instagram.com/keikusuma/" target="_blank"><span class="artist-text">Kei Kusuma</span></a><br/>
+                <a href="https://www.instagram.com/cutssss/" target="_blank"><span class="artist-text">Kevin Varian</span></a><br/>
+                <a href="https://www.instagram.com/kongandri/" target="_blank"><span class="artist-text">Kong Andri</span></a><br/>
+                <a href="https://www.instagram.com/matasatu_matabolong/" target="_blank"><span class="artist-text">Matasatu & Matabolong</span></a><br/>
+                <a href="https://www.instagram.com/mikrosil/" target="_blank"><span class="artist-text">mikrosil</span></a><br/>
+                <a href="https://www.instagram.com/mirffu/" target="_blank"><span class="artist-text">Mirfak</span></a><br/>
+                <a href="https://www.instagram.com/monez_/" target="_blank"><span class="artist-text">Monez</span></a><br/>
+                <a href="https://www.instagram.com/synasaya" target="_blank"><span class="artist-text">Nasaya Mafaridik</span></a><br/>
+                <a href="https://www.instagram.com/nikojutsu" target="_blank"><span class="artist-text">Nikojutsu</span></a><br/>
+                <a href="http://instagram.com/nrlail" target="_blank"><span class="artist-text">Nurulaila Fitriyani</span></a>
             </div>
             <div class="col-6 col-md-3 official-artist-names">
-                <a href="https://www.instagram.com/oliviariferiani/" target="_blank">OLI</a><br/>
-                <a href="https://www.instagram.com/owiliunic/" target="_blank">Owi Liunic</a><br/>
-                <a href="https://www.instagram.com/_phantasien/" target="_blank">Phantasien</a><br/>
-                <a href="https://www.instagram.com/powl_/" target="_blank">Powl</a><br/>
-                <a href="https://www.instagram.com/rensiardinta/" target="_blank">Rensi Ardinta</a><br/>
-                <a href="https://www.instagram.com/royes__/" target="_blank">Royes</a><br/>
-                <a href="https://www.instagram.com/rubahitam_/" target="_blank">rubahitam</a><br/>
-                <a href="https://instagram.com/yesgostudio?igshid=MzRlODBiNWFlZA==" target="_blank">Rukmunal Hakim</a><br/>
-                <a href="https://www.instagram.com/ssartje__/" target="_blank">Sari Sartje</a><br/>
-                <a href="https://www.instagram.com/satriawgp/" target="_blank">SATRIAWGP</a><br/>
-                <a href="https://www.instagram.com/satwikakresna/" target="_blank">Satwika Kresna</a>
+                <a href="https://www.instagram.com/oliviariferiani/" target="_blank"><span class="artist-text">OLI</span></a><br/>
+                <a href="https://www.instagram.com/owiliunic/" target="_blank"><span class="artist-text">Owi Liunic</span></a><br/>
+                <a href="https://www.instagram.com/_phantasien/" target="_blank"><span class="artist-text">Phantasien</span></a><br/>
+                <a href="https://www.instagram.com/powl_/" target="_blank"><span class="artist-text">Powl</span></a><br/>
+                <a href="https://www.instagram.com/rensiardinta/" target="_blank"><span class="artist-text">Rensi Ardinta</span></a><br/>
+                <a href="https://www.instagram.com/royes__/" target="_blank"><span class="artist-text">Royes</span></a><br/>
+                <a href="https://www.instagram.com/rubahitam_/" target="_blank"><span class="artist-text">rubahitam</span></a><br/>
+                <a href="https://instagram.com/yesgostudio" target="_blank"><span class="artist-text">Rukmunal Hakim</span></a><br/>
+                <a href="https://www.instagram.com/ssartje__/" target="_blank"><span class="artist-text">Sari Sartje</span></a><br/>
+                <a href="https://www.instagram.com/satriawgp/" target="_blank"><span class="artist-text">SATRIAWGP</span></a><br/>
+                <a href="https://www.instagram.com/satwikakresna/" target="_blank"><span class="artist-text">Satwika Kresna</span></a>
             </div>
             <div class="col-6 col-md-3 official-artist-names">
-                <a href="https://www.instagram.com/septadenata/" target="_blank">SDNT</a><br/>
-                <a href="https://www.instagram.com/shanetortilla/" target="_blank">Shane Tiara</a><br/>
-                <a href="https://www.instagram.com/shanlync_/" target="_blank">Shanlyn C.</a><br/>
-                <a href="https://www.instagram.com/taufikrgb/" target="_blank">taufikrgb</a><br/>
-                <a href="https://www.instagram.com/tks.lowskill" target="_blank">TKS Lowskill</a><br/>
-                <a href="https://www.instagram.com/tommychandra/" target="_blank">Tommy Chandra</a><br/>
-                <a href="https://www.instagram.com/villarica___/" target="_blank">Villarica</a><br/>
-                <a href="https://www.instagram.com/azis_wicaksono/" target="_blank">Wicaksono Azis</a><br/>
-                <a href="https://www.instagram.com/wulangsunu/" target="_blank">Wulang Sunu</a><br/>
-                <a href="https://www.instagram.com/yogkus" target="_blank">Yogkus</a><br/>
-                <a href="https://www.instagram.com/yudho.xyz/" target="_blank">Yudho</a>
+                <a href="https://www.instagram.com/septadenata/" target="_blank"><span class="artist-text">SDNT</span></a><br/>
+                <a href="https://www.instagram.com/shanetortilla/" target="_blank"><span class="artist-text">Shane Tiara</span></a><br/>
+                <a href="https://www.instagram.com/shanlync_/" target="_blank"><span class="artist-text">Shanlyn C.</span></a><br/>
+                <a href="https://www.instagram.com/taufikrgb/" target="_blank"><span class="artist-text">taufikrgb</span></a><br/>
+                <a href="https://www.instagram.com/tks.lowskill" target="_blank"><span class="artist-text">TKS Lowskill</span></a><br/>
+                <a href="https://www.instagram.com/tommychandra/" target="_blank"><span class="artist-text">Tommy Chandra</span></a><br/>
+                <a href="https://www.instagram.com/villarica___/" target="_blank"><span class="artist-text">Villarica</span></a><br/>
+                <a href="https://www.instagram.com/azis_wicaksono/" target="_blank"><span class="artist-text">Wicaksono Azis</span></a><br/>
+                <a href="https://www.instagram.com/wulangsunu/" target="_blank"><span class="artist-text">Wulang Sunu</span></a><br/>
+                <a href="https://www.instagram.com/yogkus" target="_blank"><span class="artist-text">Yogkus</span></a><br/>
+                <a href="https://www.instagram.com/yudho.xyz/" target="_blank"><span class="artist-text">Yudho</span></a>
             </div>
         </div>
     </div>
