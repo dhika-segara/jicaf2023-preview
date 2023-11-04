@@ -59,6 +59,10 @@
             background-size: auto 100%, auto 100%;
             background-position: center left, center right;
             background-repeat: repeat-y;
+            -webkit-transform: translate(0,0);
+            -moz-transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -o-transform: translate(0,0);
             transform: translate(0,0);
             transition: transform 5ms ease-in-out;
         }
@@ -141,10 +145,18 @@
             z-index: -1;
         }
         .ticket-container .ticket-name, .ticket-container .ticket-description{
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
             transform: translateY(0);
             transition: transform 200ms 0ms ease-in-out;
         }
         .ticket-container:hover .ticket-name, .ticket-container:hover .ticket-description{
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
             transform: translateY(-10px);
         }
         #regular{
@@ -189,6 +201,10 @@
             top: 100%;
             left: 0;
             height: 350px;
+            -webkit-transform: translate(0%, -100%);
+            -moz-transform: translate(0%, -100%);
+            -ms-transform: translate(0%, -100%);
+            -o-transform: translate(0%, -100%);
             transform: translate(0%, -100%);
             opacity: 0;
         }
@@ -259,53 +275,57 @@
             max-width: 100%;
         }
         #ldanumaya{
-            height: 40px;
+            height: 30px;
         }
         #lgaspack{
-            height: 37px;
+            height: 27px;
         }
         #lint3rsect{
-            height: 17px;
+            height: 12px;
         }
         #ljadi{
-            height: 20px;
+            height: 15px;
         }
         .lgmk{
-            height: 32px;
+            height: 23px;
         }
         .linfipop{
-            height: 40px;
-        }
-        .lfantoystic{
-            height: 40px;
-        }
-        #lblackhand{
-            height: 25px;
-        }
-        #lbritish{
-            height: 32px;
-        }
-        #lcipsi{
             height: 28px;
         }
+        .lfantoystic{
+            height: 32px;
+        }
+        #lblackhand{
+            height: 21px;
+        }
+        #lbritish{
+            height: 25px;
+        }
+        #lcipsi{
+            height: 21px;
+        }
         #lformat{
-            height: 18px;
+            height: 14px;
         }
         #lklif{
-            height: 45px;
+            height: 27px;
         }
         #loic{
-            height: 40px;
+            height: 27px;
         }
         #lpineapple{
-            height: 100px;
-            transform: translateY(-23px);
+            height: 57px;
+            -webkit-transform: translateY(-18px);
+            -moz-transform: translateY(-18px);
+            -ms-transform: translateY(-18px);
+            -o-transform: translateY(-18px);
+            transform: translateY(-18px);
         }
         #lpinterest{
-            height: 50px;
+            height: 30px;
         }
         #lprime{
-            height: 45px;
+            height: 30px;
         }
         #footer{
             margin: 30px 0 50px;
@@ -326,8 +346,65 @@
             .artist-img{
                 display: none;
             }
+            .partner-title{
+                margin-bottom: 15px;
+            }
             #ldanumaya{
-                height: 30px;
+                height: 23px;
+            }
+            #lgaspack{
+                height: 27px;
+            }
+            #lint3rsect{
+                height: 12px;
+            }
+            #ljadi{
+                height: 13px;
+            }
+            #media-partner .partner-item{
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .lgmk{
+                height: 18px;
+            }
+            .linfipop{
+                height: 24px;
+            }
+            .lfantoystic{
+                height: 27px;
+            }
+            #lblackhand{
+                height: 18px;
+            }
+            #lbritish{
+                height: 20px;
+            }
+            #lcipsi{
+                height: 18px;
+            }
+            #lformat{
+                height: 12px;
+            }
+            #lklif{
+                height: 24px;
+            }
+            #loic{
+                height: 25px;
+            }
+            #lpineapple{
+                height: 50px;
+                -webkit-transform: translateY(-14px);
+                -moz-transform: translateY(-14px);
+                -ms-transform: translateY(-14px);
+                -o-transform: translateY(-14px);
+                transform: translateY(-14px);
+            }
+            #lpinterest{
+                height: 28px;
+            }
+            #lprime{
+                height: 26px;
             }
         }
         /* Tablet */
@@ -354,11 +431,68 @@
             .artist-img{
                 display: none;
             }
+            .partner-title{
+                margin-bottom: 15px;
+            }
+            #media-partner .partner-item{
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .partner-item{
+                margin-bottom: 15px;
+            }
             #ldanumaya{
-                height: 22px;
+                height: 18px;
+            }
+            #lgaspack{
+                height: 18px;
+            }
+            #lint3rsect{
+                height: 7px;
+            }
+            #ljadi{
+                height: 10px;
+            }
+            #lblackhand{
+                height: 13px;
+            }
+            #lbritish{
+                height: 15px;
+            }
+            #lcipsi{
+                height: 13px;
+            }
+            #lformat{
+                height: 9px;
+            }
+            #lklif{
+                height: 20px;
+            }
+            #loic{
+                height: 20px;
             }
             #lpineapple{
-                transform: translateY(-10px);
+                height: 50px;
+                -webkit-transform: translateY(-5px);
+                -moz-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                -o-transform: translateY(-5px);
+                transform: translateY(-5px);
+            }
+            #lpinterest{
+                height: 22px;
+            }
+            #lprime{
+                height: 20px;
+            }
+            .lgmk{
+                height: 13px;
+            }
+            .linfipop{
+                height: 18px;
+            }
+            .lfantoystic{
+                height: 20px;
             }
         }
         /* Mobile */
@@ -367,8 +501,8 @@
                 margin: 0 15px;
             }
             .parallax-background{
-                height: 350vh;
-                background-position: 105% center, 0% center;
+                height: 175%;
+                background-position: -50% center, 125% center;
             }
             #home{
                 padding: 65px 15px 0;
@@ -430,27 +564,68 @@
             #partners{
                 padding: 0 15px;
             }
+            .partner-title{
+                margin: 20px 0 15px;
+                font-size: 15px;
+                line-height: 16px;
+            }
             .partner-item{
                 display: inline-block;
                 margin-right: 15px;
+                margin-bottom: 15px;
+            }
+            #ldanumaya{
+                height: 18px;
             }
             #lgaspack{
-                height: 35px;
+                height: 18px;
             }
             #lint3rsect{
+                height: 7px;
+            }
+            #ljadi{
+                height: 10px;
+            }
+            #lblackhand{
+                height: 13px;
+            }
+            #lbritish{
                 height: 15px;
             }
+            #lcipsi{
+                height: 13px;
+            }
+            #lformat{
+                height: 9px;
+            }
+            #lklif{
+                height: 20px;
+            }
+            #loic{
+                height: 20px;
+            }
             #lpineapple{
-                transform: translateY(-10px);
+                height: 50px;
+                -webkit-transform: translateY(-5px);
+                -moz-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                -o-transform: translateY(-5px);
+                transform: translateY(-5px);
+            }
+            #lpinterest{
+                height: 22px;
+            }
+            #lprime{
+                height: 20px;
             }
             .lgmk{
-                height: 25px;
+                height: 13px;
             }
             .linfipop{
-                height: 32px;
+                height: 18px;
             }
             .lfantoystic{
-                height: 32px;
+                height: 20px;
             }
         }
     </style>
@@ -820,7 +995,7 @@
                     <div class="partner-item">
                         <img id="ljadi" src="res/img/sponsor/jadi-print.png" />
                     </div>
-                    <div class="d-none d-md-block d-xl-none">
+                    <div id="media-partner" class="d-none d-md-block d-xl-none">
                         <div class="partner-title">
                             OFFICIAL<br/><b>MEDIA PARTNER</b>
                         </div>
