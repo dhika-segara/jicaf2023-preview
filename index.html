@@ -41,6 +41,8 @@
             font-family: 'ClashDisplay', sans-serif;
             font-weight: normal;
             color: var(--primary-color);
+
+            overflow-x: hidden;
         }
         .parallax-container{
             position: fixed;
@@ -91,9 +93,8 @@
             margin: 0 25px;
         }
         .one-section{
-            min-height: 100vh;
-            display:flex;
-            align-items:center;
+            margin-top: 100px;
+            margin-bottom: 100px;
         }
         #home{
             padding-top: 65px;
@@ -120,7 +121,7 @@
             font-weight: bold;
         }
         #tickets{
-            padding-top: 65px;
+            
         }
         .ticket-title{
             margin-bottom: 50px;
@@ -252,6 +253,9 @@
         .schedule-items, .workshop{
             font-size: 12px;
             line-height: 13px;
+        }
+        .schedule-items b, .workshop b{
+            font-weight: 500;
         }
         .workshop{
             margin-bottom: 30px;
@@ -431,6 +435,9 @@
                 font-size: 20px;
                 line-height: 21px;
             }
+            .schedule-items{
+                min-height: 175px;
+            }
             .artist-img{
                 display: none;
             }
@@ -507,6 +514,10 @@
                 height: 175%;
                 background-position: -50% center, 125% center;
             }
+            .one-section{
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
             #home{
                 padding: 65px 15px 0;
             }
@@ -552,6 +563,9 @@
                 font-size: 26px;
                 line-height: 30px;
             }
+            .artist-names a{
+                display: block;
+            }
             .artist-img{
                 display: none;
             }
@@ -560,6 +574,7 @@
             }
             #schedule{
                 padding: 0 30px;
+                margin-top: 50px;
             }
             .workshop{
                 margin-bottom: 40px;
@@ -571,6 +586,9 @@
                 margin: 20px 0 15px;
                 font-size: 15px;
                 line-height: 16px;
+            }
+            #organizer{
+                padding: 0;
             }
             .partner-item{
                 display: inline-block;
@@ -683,7 +701,7 @@
     </div>
 
     <!-- TICKETS -->
-    <div id="tickets" class="container">
+    <div id="tickets" class="container one-section">
         <div class="row justify-content-evenly">
             <div class="col-12 ticket-title text-center">GET YOUR TICKETS NOW!</div>
             <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
@@ -705,7 +723,7 @@
     <div id="artist" class="container one-section">
         <div class="row">
             <div class="col-12 artist-title mt-0">GUEST ARTISTS</div>
-            <div class="col-12 artist-names">
+            <div class="col-12 artist-names d-none d-md-block">
                 <a href="https://www.instagram.com/ardhiraputra/" target="_blank"><span class="artist-text">Ardhira Putra</span><img class="artist-img" src="res/img/artists/ardhira-putra.jpg" /></a>
                 —
                 <a href="https://www.instagram.com/antonioreinhard/" target="_blank"><span class="artist-text">Antonio Reinhard</span><img class="artist-img" src="res/img/artists/antonio-reinhard-wisesa.jpg" /></a>
@@ -726,9 +744,21 @@
                 —
                 <a href="https://www.instagram.com/stereoflow_id/" target="_blank"><span class="artist-text">Stereoflow</span><img class="artist-img" src="res/img/artists/stereoflow.jpg" /></a>
             </div>
+            <div class="col-12 artist-names d-block d-md-none">
+                <a href="https://www.instagram.com/ardhiraputra/" target="_blank"><span class="artist-text">Ardhira Putra</span></a>
+                <a href="https://www.instagram.com/antonioreinhard/" target="_blank"><span class="artist-text">Antonio Reinhard</span></a>
+                <a href="https://www.instagram.com/ardneks/" target="_blank"><span class="artist-text">Ardneks</span></a>
+                <a href="https://www.instagram.com/eliciaedijanto/" target="_blank"><span class="artist-text">Elicia Edijanto</span></a>
+                <a href="https://www.instagram.com/ishahening/" target="_blank"><span class="artist-text">Isha Hening</span></a>
+                <a href="https://www.instagram.com/vngnc/" target="_blank"><span class="artist-text">izzy</span></a>
+                <a href="https://www.instagram.com/liunic/" target="_blank"><span class="artist-text">Liunic</span></a>
+                <a href="https://www.instagram.com/rooovie/" target="_blank"><span class="artist-text">M. Fatchurofi</span></a>
+                <a href="https://www.instagram.com/pinot/" target="_blank"><span class="artist-text">Pinot</span></a>
+                <a href="https://www.instagram.com/stereoflow_id/" target="_blank"><span class="artist-text">Stereoflow</span></a>
+            </div>
 
             <div class="col-12 artist-title">SPECIAL SHOWCASE</div>
-            <div class="col-12 artist-names">
+            <div class="col-12 artist-names d-none d-md-block">
                 <a href="#" target="_blank"><span class="artist-text">Kowawa by Abenk Alter</span></a>
                 —
                 <a href="#" target="_blank"><span class="artist-text">Kunto Aji</span></a>
@@ -737,6 +767,13 @@
                 —
                 <a href="#" target="_blank"><span class="artist-text">Tabi by Marchella FP</span></a>
                 —
+                <a href="#" target="_blank"><span class="artist-text">Mochtar Sarman</span></a>
+            </div>
+            <div class="col-12 artist-names d-block d-md-none">
+                <a href="#" target="_blank"><span class="artist-text">Kowawa by Abenk Alter</span></a>
+                <a href="#" target="_blank"><span class="artist-text">Kunto Aji</span></a>
+                <a href="#" target="_blank"><span class="artist-text">Machine56</span></a>
+                <a href="#" target="_blank"><span class="artist-text">Tabi by Marchella FP</span></a>
                 <a href="#" target="_blank"><span class="artist-text">Mochtar Sarman</span></a>
             </div>
 
@@ -806,67 +843,75 @@
                 <div class="schedule-title">[ FRI ]<br/>10 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         16:00-17:00<br/>
-                        JICAF x KLIF x OIC
+                        JICAF x KLIF x OIC Singapore
                     </div>
                     <div class="schedule-item">
-                        16:00-17:00<br/>
-                        Stereoflow
+                        16:30-17:30<br/>
+                        Ardneks
                     </div>
                     <div class="schedule-item">
-                        17:00-18:00<br/>
-                        M. Fatchurof
+                        18:00-19:00<br/>
+                        M. Fatchurofi
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    PRIME BLANK CANVAS X JICAF 2023 ARTISTS
                 </div>
             </div>
             <div class="col">
                 <div class="schedule-title">[ SAT ]<br/>11 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
-                        16:00-17:00<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
+                        15:00-16:00<br/>
+                        Antonio Reinhard Wisesa
+                    </div>
+                    <div class="schedule-item">
+                        16:30-17:30<br/>
                         Liunic
+                    </div>
+                    <div class="schedule-item">
+                        18:30-19:30<br/>
+                        Rukmunal Hakim x Ardhira Putra x Royes
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    PRIME BLANK CANVAS X JICAF 2023 ARTISTS<br/><br/>
+                    CIPSI CRAFF
                 </div>
             </div>
             <div class="col">
                 <div class="schedule-title">[ SUN ]<br/>12 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         15:00-16:00<br/>
                         British Council Artists
                     </div>
                     <div class="schedule-item">
-                        16:00-17:00<br/>
+                        16:30-17:30<br/>
                         Izzy x Isha Hening
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS<br/>
-                    CIPSI CRAFF
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    PRIME BLANK CANVAS X JICAF 2023 ARTISTS
                 </div>
             </div>
             <div class="col">
                 <div class="schedule-title">[ MON ]<br/>13 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         TBC
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
                     TBC
                 </div>
             </div>
@@ -874,13 +919,12 @@
                 <div class="schedule-title">[ TUE ]<br/>14 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
-                        15:00-16:00<br/>
-                        Jadi Print x JICAF
+                        <b>CONFERENCE / TALKS</b><br/>
+                        TBC
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
                     TBC
                 </div>
             </div>
@@ -888,12 +932,13 @@
                 <div class="schedule-title">[ WED ]<br/>15 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
-                        TBC
+                        <b>CONFERENCE / TALKS</b><br/>
+                        16:00-17:00<br/>
+                        Pinterest x Shane Tortilla x Arya Mularama
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
                     TBC
                 </div>
             </div>
@@ -901,17 +946,17 @@
                 <div class="schedule-title">[ THU ]<br/>16 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         15:00-16:00<br/>
-                        Pinterest x JICAF Artists
+                        Kunto Aji
                     </div>
                     <div class="schedule-item">
-                        18:30-19:30<br/>
-                        Antonio Reinhard x Kunto Aji
+                        16:30-17:30<br/>
+                        JADI Print x Nikojutsu x Satwika K.
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
                     BLACK HAND GANG
                 </div>
             </div>
@@ -919,55 +964,67 @@
                 <div class="schedule-title">[ FRI ]<br/>17 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         15:00-16:00<br/>
                         Elicia Edijanto
                     </div>
                     <div class="schedule-item">
-                        17:00-18:00<br/>
+                        16:30-17:30<br/>
                         Stereoflow
+                    </div>
+                    <div class="schedule-item">
+                        18:30-19:30<br/>
+                        Abenk Alter
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS<br/>
-                    BLACK HAND GANG
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    BLACK HAND GANG<br/><br/>
+                    PRIME BLANK CANVAS X JICAF 2023 ARTISTS
                 </div>
             </div>
             <div class="col">
                 <div class="schedule-title">[ SAT ]<br/>18 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         15:00-16:00<br/>
                         GMK x JICAF Artists
                     </div>
                     <div class="schedule-item">
-                        17:00-18:00<br/>
+                        16:30-17:30<br/>
+                        Eka Kurniawan x Wulang Sunu
+                    </div>
+                    <div class="schedule-item">
+                        18:30-19:30<br/>
                         Ardhira Putra
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    PRIME BLANK CANVAS x JICAF 2023 ARTISTS
                 </div>
             </div>
             <div class="col">
                 <div class="schedule-title">[ SUN ]<br/>19 NOV</div>
                 <div class="schedule-items">
                     <div class="schedule-item">
-                        CONFERENCE<br/>
+                        <b>CONFERENCE / TALKS</b><br/>
                         15:00-16:00<br/>
-                        BHG
+                        Antonio Reinhard Wisesa
                     </div>
                     <div class="schedule-item">
-                        17:00-18:00<br/>
+                        16:30-17:30<br/>
+                        BLACK HAND GANG
+                    </div>
+                    <div class="schedule-item">
+                        18:30-19:30<br/>
                         JICAF Committees
                     </div>
                 </div>
                 <div class="workshop">
-                    WORKSHOP<br/>
-                    PRIME BLANK CANVAS
+                    <b>WORKSHOP / LIVE PERFORMANCE</b><br/>
+                    PRIME BLANK CANVAS x JICAF 2023 ARTISTS
                 </div>
             </div>
         </div>
