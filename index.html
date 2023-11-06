@@ -124,7 +124,43 @@
             
         }
         .ticket-title{
-            margin-bottom: 50px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+        .ticket-marquee{
+            width: 100vw;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow-x: hidden;
+        }
+        .marquee-container{
+            display: block;
+            width: 7104px;
+            position: absolute;
+            animation: runningText 20s linear infinite;
+        }
+        .marquee-item{
+            width: 50%;
+            float: left;
+        }
+        @keyframes runningText{
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -3552px;
+            }
+        }
+        @keyframes runningTextMobile{
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -3107px;
+            }
         }
         .ticket-container{
             position: relative;
@@ -543,8 +579,12 @@
             .ticket-container{
                 margin-bottom: 50px;
             }
+            .marquee-container{
+                width: 6214px;
+                animation: runningTextMobile 20s linear infinite;
+            }
             .ticket-title{
-                margin-bottom: 30px;
+                margin-bottom: 80px;
             }
             .ticket-name{
                 font-size: 28px;
@@ -703,7 +743,18 @@
     <!-- TICKETS -->
     <div id="tickets" class="container one-section">
         <div class="row justify-content-evenly">
-            <div class="col-12 ticket-title text-center">GET YOUR TICKETS NOW!</div>
+            <div class="col-12 ticket-title text-center">
+                <div class="ticket-marquee">
+                    <div class="marquee-container">
+                        <div class="marquee-item">
+                            •&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="marquee-item">
+                            •&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;GET YOUR TICKETS NOW!&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;LIMITED AVAILABILITY&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
                 <a href="https://www.loket.com/event/jakarta-illustration-creative-arts-fair-2023_VDDb4" target="_blank" id="regular" class="ticket-container">
                     <div class="ticket-name">REGULAR PASS</div>
